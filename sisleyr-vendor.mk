@@ -299,6 +299,12 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
 
+# Dirac
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/sisleyr/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libDiracAPI_SHARED.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDiracAPI_SHARED.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/soundfx/libdirac.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdirac.so
+
 PRODUCT_PACKAGES += \
     libtime_genoff \
     libloc_api_v02 \
