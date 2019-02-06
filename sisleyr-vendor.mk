@@ -17,7 +17,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
-    vendor/lenovo/sisleyr/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
@@ -28,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/radish:system/vendor/bin/radish \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
+    vendor/lenovo/sisleyr/proprietary/vendor/bin/vm_bms:system/vendor/bin/vm_bms \
     vendor/lenovo/sisleyr/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
     vendor/lenovo/sisleyr/proprietary/vendor/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw \
     vendor/lenovo/sisleyr/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:system/vendor/firmware/cpp_firmware_v1_1_1.fw \
@@ -658,7 +658,7 @@ vendor/lenovo/sisleyr/proprietary/lib/hw/camera.vendor.msm8916.so:system/vendor/
     vendor/lenovo/sisleyr/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
 vendor/lenovo/sisleyr/proprietary/lib/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
 vendor/lenovo/sisleyr/proprietary/lib/libmm-qcamera.so:system/vendor/lib/libmm-qcamera.so \
-vendor/lenovo/sisleyr/proprietary/vendor/lib/libchromatix_ov5693_snapshot.so:system/vendor/lib/libchromatix_ov5693_snapshot.so 
+vendor/lenovo/sisleyr/proprietary/vendor/lib/libchromatix_ov5693_snapshot.so:system/vendor/lib/libchromatix_ov5693_snapshot.so \
 
 
 
