@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
+    vendor/lenovo/sisleyr/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/lenovo/sisleyr/proprietary/vendor/bin/radish:system/vendor/bin/radish \
@@ -46,9 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/etc/permissions/qcnvitems.xml:system/vendor/etc/permissions/qcnvitems.xml \
     vendor/lenovo/sisleyr/proprietary/vendor/etc/permissions/qcrilhook.xml:system/vendor/etc/permissions/qcrilhook.xml \
     vendor/lenovo/sisleyr/proprietary/vendor/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libwcnss_qmi.so:system/vendor/lib64/libwcnss_qmi.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
-    vendor/lenovo/sisleyr/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -71,10 +69,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libaptX_encoder.so:system/vendor/lib/libaptX_encoder.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
@@ -96,6 +90,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libchromatix_imx179_common.so:system/vendor/lib/libchromatix_imx179_common.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libchromatix_imx179_default_video.so:system/vendor/lib/libchromatix_imx179_default_video.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libchromatix_imx179_liveshot.so:system/vendor/lib/libchromatix_imx179_liveshot.so \
@@ -323,6 +321,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libvcel.so:system/vendor/lib64/libvcel.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libwcnss_qmi.so:system/vendor/lib64/libwcnss_qmi.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
 
 PRODUCT_PACKAGES += \
