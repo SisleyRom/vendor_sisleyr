@@ -39,6 +39,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
     vendor/lenovo/sisleyr/proprietary/vendor/firmware/a300_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pfp.fw \
     vendor/lenovo/sisleyr/proprietary/vendor/firmware/a300_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pm4.fw \
+    vendor/lenovo/sisleyr/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
+    vendor/lenovo/sisleyr/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
     vendor/lenovo/sisleyr/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_4_0.fw \
     vendor/lenovo/sisleyr/proprietary/vendor/firmware/venus.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b00 \
     vendor/lenovo/sisleyr/proprietary/vendor/firmware/venus.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b01 \
@@ -80,6 +82,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptX_encoder.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libacdbmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbmapper.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libc2d30-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a3xx.so \
@@ -182,10 +186,16 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_wavelet_lib.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libmmipl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmipl.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmparser_lite.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libmmparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmparser.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/liboemcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcamera.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxMux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMux.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
@@ -199,6 +209,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegdec.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
@@ -224,41 +235,24 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/egl/libRBGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libRBGLESv1_CM_adreno.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/egl/libRBGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libRBGLESv2_adreno.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/hw/flp.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/flp.default.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/lib-sec-disp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-sec-disp.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libactuator_dw9718_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libactuator_dw9718_camcorder.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libactuator_dw9718_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libactuator_dw9718_camera.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libactuator_dw9718_p13v01n_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libactuator_dw9718_p13v01n_camcorder.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libactuator_dw9718_p13v01n_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libactuator_dw9718_p13v01n_camera.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libactuator_dw9718_sisley_snd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libactuator_dw9718_sisley_snd.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libactuator_dw9718.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9718.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptX_encoder.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libacdbmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbmapper.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libc2d30-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30-a3xx.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libc2d30-a4xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30-a4xx.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libcalmodule_akm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcalmodule_akm.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_common.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_default_video.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_liveshot.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_preview.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sisley_snd_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sisley_snd_common.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sisley_snd_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sisley_snd_default_video.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sisley_snd_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sisley_snd_liveshot.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sisley_snd_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sisley_snd_preview.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sisley_snd_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sisley_snd_snapshot.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_snapshot.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sunny_p8n15e_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sunny_p8n15e_common.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sunny_p8n15e_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sunny_p8n15e_default_video.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sunny_p8n15e_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sunny_p8n15e_liveshot.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sunny_p8n15e_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sunny_p8n15e_preview.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libchromatix_imx179_sunny_p8n15e_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromatix_imx179_sunny_p8n15e_snapshot.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
@@ -267,6 +261,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libFileMux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFileMux.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflp.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libgeofence.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofence.so \
@@ -278,18 +273,19 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmparser_lite.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmmparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmparser.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmm-abl-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-abl-oem.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmm-abl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-abl.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmm-als.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-als.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-disp-apis.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmm-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-qdcm.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_frame_algorithm.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_stats_algorithm.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmmcamera_imx179.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_imx179.so \
-    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmmcamera_imx179_sunny_p8n15e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_imx179_sunny_p8n15e.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmrtpdecoder.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmrtpencoder.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAacDec.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libOmxMux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxMux.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
@@ -314,12 +310,18 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSDriver_adreno.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libsc-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsc-a3xx.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libscale.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscale.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmemlog.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalioctl.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
+    vendor/lenovo/sisleyr/proprietary/vendor/lib64/libtzplayready.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzplayready.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libwcnss_qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwcnss_qmi.so \
     vendor/lenovo/sisleyr/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so
 
